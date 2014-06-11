@@ -1,0 +1,13 @@
+!!! Strict
+%html
+  %head
+    %title Workopolis Prototype Seed
+    %link{:rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/jobSearch.css'}
+    %script{:type=>'text/javascript', :src=>'http://Workopolis.com/assets/scripts/jquery-1.9.1.min.js'}
+    %script{:type=>'text/javascript', :src=>'http://Workopolis.com/assets/scripts/jquery-migrate-1.2.1.min.js'}
+  %body
+    %header.worko-header 
+      %h5= "Workopolis Header"
+    .container.cf
+      = yield
+    %footer.worko-footer= "Workpolis Footer"

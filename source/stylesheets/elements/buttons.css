@@ -1,0 +1,46 @@
+/************** BUTTONS *************/
+.btn1 { border-radius: 4px; color: #FFFFFF; font-size: 12px; font-weight: 500; font-family: "BryantMedium", Arial, sans-serif; text-decoration: none; text-transform: uppercase; white-space: nowrap; text-rendering: optimizeLegibility; -webkit-font-smoothing: subpixel-antialiased; cursor: pointer; margin: 0; padding: 4px 10px; border: 1px solid #3c8a2e; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; transition: all 0.2s ease; -webkit-appearance: none; display: inline-block; background-color: #69be28; background-image: -webkit-linear-gradient(top, #69be28 1%, #3c8a2e 100%); background-image: linear-gradient(to bottom,#69be28 1%, #3c8a2e 100%); }
+.btn1:hover { text-decoration: none; }
+.btn1:focus { text-decoration: none; outline: 1px dotted #525252; }
+.btn1:hover { background-color: #69be28; background-image: -webkit-linear-gradient(top, #69be28 0%, #69be28 25%, #3c8a2e 100%); background-image: linear-gradient(to bottom,#69be28 0%, #69be28 25%, #3c8a2e 100%); }
+.btn1:active { background-color: #69be28; background-image: -webkit-linear-gradient(top, #69be28 1%, #3c8a2e 100%); background-image: linear-gradient(to bottom,#69be28 1%, #3c8a2e 100%); }
+
+.btn2 { border-radius: 4px; color: #FFFFFF; font-size: 12px; font-weight: 500; font-family: "BryantMedium", Arial, sans-serif; text-decoration: none; text-transform: uppercase; white-space: nowrap; text-rendering: optimizeLegibility; -webkit-font-smoothing: subpixel-antialiased; cursor: pointer; margin: 0; padding: 4px 10px; border: 1px solid #d2492a; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; transition: all 0.2s ease; -webkit-appearance: none; display: inline-block; background-color: #ffa100; background-image: -webkit-linear-gradient(top, #ffa100 1%, #d2492a 100%); background-image: linear-gradient(to bottom,#ffa100 1%, #d2492a 100%); }
+.btn2:hover { text-decoration: none; }
+.btn2:focus { text-decoration: none; outline: 1px dotted #525252; }
+.btn2:hover { background-color: #ffa100; background-image: -webkit-linear-gradient(top, #ffa100 0%, #ffa100 25%, #d2492a 100%); background-image: linear-gradient(to bottom,#ffa100 0%, #ffa100 25%, #d2492a 100%); }
+.btn2:active { background-color: #ffa100; background-image: -webkit-linear-gradient(top, #ffa100 1%, #d2492a 100%); background-image: linear-gradient(to bottom,#ffa100 1%, #d2492a 100%); }
+
+.btn3 { border-radius: 4px; color: #FFFFFF; font-size: 12px; font-weight: 500; font-family: "BryantMedium", Arial, sans-serif; text-decoration: none; text-transform: uppercase; white-space: nowrap; text-rendering: optimizeLegibility; -webkit-font-smoothing: subpixel-antialiased; cursor: pointer; margin: 0; padding: 4px 10px; border: 1px solid #00a9e0; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; transition: all 0.2s ease; -webkit-appearance: none; display: inline-block; background-color: #007ac9; background-image: -webkit-linear-gradient(top, #007ac9 1%, #00a9e0 100%); background-image: linear-gradient(to bottom,#007ac9 1%, #00a9e0 100%); }
+.btn3:hover { text-decoration: none; }
+.btn3:focus { text-decoration: none; outline: 1px dotted #525252; }
+.btn3:hover { background-color: #007ac9; background-image: -webkit-linear-gradient(top, #007ac9 0%, #007ac9 25%, #00a9e0 100%); background-image: linear-gradient(to bottom,#007ac9 0%, #007ac9 25%, #00a9e0 100%); background-image: -webkit-linear-gradient(top, #007ac9 0%, #007ac9 25%, #00a9e0 100%); background-image: linear-gradient(to bottom, #007ac9 0%, #007ac9 25%, #00a9e0 100%); }
+.btn3:active { background-color: #007ac9; background-image: -webkit-linear-gradient(top, #007ac9 1%, #00a9e0 100%); background-image: linear-gradient(to bottom,#007ac9 1%, #00a9e0 100%); }
+
+.btn4 { border-radius: 4px; color: #FFFFFF; font-size: 12px; font-weight: 500; font-family: "BryantMedium", Arial, sans-serif; text-decoration: none; text-transform: uppercase; white-space: nowrap; text-rendering: optimizeLegibility; -webkit-font-smoothing: subpixel-antialiased; cursor: pointer; margin: 0; padding: 4px 10px; border: 1px solid #3c8a2e; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; transition: all 0.2s ease; -webkit-appearance: none; display: inline-block; background: #fff; color: #3c8a2e !important; }
+.btn4:hover { text-decoration: none; }
+.btn4:focus { text-decoration: none; outline: 1px dotted #525252; }
+
+.btn-sml { border-radius: 4px; color: #FFFFFF; font-size: 10px; font-weight: 500; font-family: "BryantMedium", Arial, sans-serif; text-decoration: none; text-transform: uppercase; white-space: nowrap; text-rendering: optimizeLegibility; -webkit-font-smoothing: subpixel-antialiased; cursor: pointer; margin: 0; padding: 3px 5px; border: 1px solid inherit; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; transition: all 0.2s ease; -webkit-appearance: none; display: inline-block; }
+.btn-sml:hover { text-decoration: none; }
+.btn-sml:focus { text-decoration: none; outline: 1px dotted #525252; }
+
+.btn-lrg { border-radius: 4px; color: #FFFFFF; font-size: 14px; font-weight: 500; font-family: "BryantMedium", Arial, sans-serif; text-decoration: none; text-transform: uppercase; white-space: nowrap; text-rendering: optimizeLegibility; -webkit-font-smoothing: subpixel-antialiased; cursor: pointer; margin: 0; padding: 6px 15px; border: 1px solid inherit; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; transition: all 0.2s ease; -webkit-appearance: none; display: inline-block; }
+.btn-lrg:hover { text-decoration: none; }
+.btn-lrg:focus { text-decoration: none; outline: 1px dotted #525252; }
+
+.btn-xlrg { border-radius: 4px; color: #FFFFFF; font-size: 18px; font-weight: 500; font-family: "BryantMedium", Arial, sans-serif; text-decoration: none; text-transform: uppercase; white-space: nowrap; text-rendering: optimizeLegibility; -webkit-font-smoothing: subpixel-antialiased; cursor: pointer; margin: 0; padding: 10px 20px; border: 1px solid inherit; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; transition: all 0.2s ease; -webkit-appearance: none; display: inline-block; text-shadow: 0 1px 1px #555555; }
+.btn-xlrg:hover { text-decoration: none; }
+.btn-xlrg:focus { text-decoration: none; outline: 1px dotted #525252; }
+
+.btn-block { border-radius: 4px; color: #FFFFFF; font-size: 12px; font-weight: 500; font-family: "BryantMedium", Arial, sans-serif; text-decoration: none; text-transform: uppercase; white-space: nowrap; text-rendering: optimizeLegibility; -webkit-font-smoothing: subpixel-antialiased; cursor: pointer; margin: 0; padding: 4px 10px; border: 1px solid #3c8a2e; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; transition: all 0.2s ease; -webkit-appearance: none; display: inline-block; width: 90%; text-align: center; }
+.btn-block:hover { text-decoration: none; }
+.btn-block:focus { text-decoration: none; outline: 1px dotted #525252; }
+
+.btn1.disabled, .btn2.disabled, .btn3.disabled, .btn1.disabled:hover, .btn2.disabled:hover, .btn3.disabled:hover, .btn1.disabled:active, .btn2.disabled:active, .btn3.disabled:active { background: #efefef; border: 1px solid #cccccc; cursor: not-allowed; color: #525252 !important; text-shadow: none; }
+
+.btn-group-horizontal { display: block; }
+
+.btn-group-horizontal [class^="btn"] { display: inline-block; float: left; margin: 0; border-radius: 0; background-color: inherit; border-right-width: 0; }
+.btn-group-horizontal [class^="btn"]:first-of-type { border-radius: 4px 0 0 4px; }
+.btn-group-horizontal [class^="btn"]:last-of-type { border-radius: 0 4px 4px 0; border-right-width: 1px; }

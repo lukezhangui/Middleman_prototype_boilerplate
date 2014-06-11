@@ -1,0 +1,16 @@
+%header.page-header
+  %h1= "Header Bryant Medium 36px"
+
+%section.filters-container
+  = render_partial 'filter'
+%main.search-results-container
+  = render_partial 'search_result_main'
+
+%aside.right-sidebar-container
+  - (1..3).each do |i|
+    .worko-box
+      %h2.worko-heading= "Sidebar #{i}"
+      %ul
+      - (0..4).each do |i|
+        %li
+          %a= "List item #{i}"
