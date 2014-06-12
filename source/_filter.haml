@@ -1,9 +1,0 @@
-%header= "Filter your search results"
-- (0...7).each do |i|
-  %details.filter-section{open: true}
-    %summary= "#Filter section #{i}"
-    %ol.filter-items
-      - (0...4).each do |x|
-        %li
-          %input{:type=>"Checkbox"}
-          %label= "Item Label for #{x}"

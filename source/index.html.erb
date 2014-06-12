@@ -1,0 +1,12 @@
+<header>
+  <h5><%= lorem.sentence %></h5>
+</header>
+
+<% 10.times do %>
+<div class="worko-box">
+  <h5 class="worko-heading"><%= lorem.words 3 %></h5>
+  <p>
+    <%= lorem.paragraphs 1 %>
+  </p>
+</div>
+<% end %>

@@ -1,0 +1,71 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "standard";
+
+/* strange that clearfix is not in standard css*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/* need a box-sizing rule in standard css */
+* {box-sizing: border-box;}
+
+@mixin vertical-align {
+	position: relative;
+	top: 50%;
+	@include transform(translateY(-50%));
+}
+
+$grey-border: 1px solid #ccc;
+
+%module-background {
+	background: white;
+}
+
+%module-border {
+  border: $grey-border;
+}
+
+body {
+	background: #ddd;
+	padding: 0;
+	margin: 0;
+  font-style: 14px;
+}
+
+.filters-container, .search-results, .worko-box {
+  background: white;
+}
+
+.worko-header {
+	height: 60px;
+	width: 100%;
+	border-bottom: 3px solid #69BE28;
+	@extend %module-background;
+	h5 {
+		@include vertical-align;
+		text-align: center;
+		color: #bbb;
+	}
+}
+
+.worko-footer {
+  height: 200px;
+  width: 100%;
+  background: #427730;
+  margin-top: 20px;
+}
+
+/* demo styles */
+
+.worko-box {
+  margin: 10px;
+  height: 300px;
+  @include span-columns(3);
+}
