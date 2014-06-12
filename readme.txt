@@ -11,7 +11,7 @@
 -------------------------------------------------------------------------------------------------
 |$  INSTRUCTIONS:                                                                              $|
 |$  ----------------------------------                                                         $|
-|$  1. Run the 0_INSTALL THIS FIRST INSTALLER.exe (not a virus, promise)                       $|
+|$  1. Run the 0_INSTALL THIS FIRST INSTALLER.exe (Only once per computer)                     $|
 |$  2. Install the plugins(This magically makes SCSS, Bourbon and stuff work)                  $|
 |$  3. Start the server. Go to localhost:4567 in your browser.                                 $|
 |$  4. Make changes to the files inside the Source directory. Watch your browser               $|
