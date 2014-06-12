@@ -37,7 +37,7 @@
 
 # Reload the browser automatically whenever files change
 # configure :development do
-#   activate :livereload
+  activate :livereload, :host => '172.28.8.45'
 # end
 
 # Methods defined in the helpers block are available in templates
