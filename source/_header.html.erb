@@ -1,0 +1,40 @@
+  <header class='worko-header'>
+  	<section class="topnav-white-bar">
+  		<img class="leaderboard-ad" src="../stylesheets/images/leaderboard.jpg">
+      <div class="french-col">
+        <a href="#">Français</a></div>
+      <div class="logo-col">
+        <img class="workopolis-logo" src="../stylesheets/images/workopolis-logo-notag.png">
+      </div>
+      <div class="recruiter-signin-col"><a href="#">Recruiters/Employers?</a></div>
+  	</section>
+  	<section class="topnav-green-bar">
+  		<nav>
+        <img class="web-logo" src="../stylesheets/images/web-logo.png">
+      	<a href="#">Home</a>
+  			<a href="#">Find Jobs</a>
+  			<a href="#">My Resume</a>
+  			<a href="#">My Dashboard</a>
+  			<a href="#">Advice and Tips</a>
+  		</nav>
+  	</section>
+    <div class="dropdown-browse-jobs">
+      <div class="dropdown-container">
+
+        <div class="dropdown-secondary-menu"> 
+          <% 7.times do %>
+          <a href="#"><%= lorem.words 4 %></span></a>
+          <% end %>
+        </div>
+        <% 3.times do%>
+          <div>
+            <% 7.times do %>
+              <div class="dropdown-menu-item"><a href="#"><%= lorem.words 4 %></a></div>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+
+    </div>
+   
+  </header>

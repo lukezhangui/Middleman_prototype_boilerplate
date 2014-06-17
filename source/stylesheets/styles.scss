@@ -1,16 +1,17 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "standard";
+@import "global/variables";
 
 /* strange that clearfix is not in standard css*/
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+	content: " "; /* 1 */
+	display: table; /* 2 */
 }
 
 .cf:after {
-    clear: both;
+	clear: both;
 }
 
 /* need a box-sizing rule in standard css */
@@ -29,22 +30,21 @@ $grey-border: 1px solid #ccc;
 }
 
 %module-border {
-  border: $grey-border;
+	border: $grey-border;
 }
 
 body {
 	background: #ddd;
 	padding: 0;
 	margin: 0;
-  font-style: 14px;
+	font-size: 14px;
 }
 
 .filters-container, .search-results, .worko-box {
-  background: white;
+	background: white;
 }
 
 .worko-header {
-	height: 60px;
 	width: 100%;
 	border-bottom: 3px solid #69BE28;
 	@extend %module-background;
@@ -56,16 +56,117 @@ body {
 }
 
 .worko-footer {
-  height: 200px;
-  width: 100%;
-  background: #427730;
-  margin-top: 20px;
+	height: 200px;
+	width: 100%;
+	background: #427730;
+	margin-top: 20px;
 }
 
 /* demo styles */
-
+.container.cf {
+	@include outer-container();
+}
 .worko-box {
-  margin: 10px;
-  height: 300px;
-  @include span-columns(3);
+	margin: 10px;
+	height: 300px;
+	@include span-columns(3);
+}
+
+.leaderboard-ad {
+	margin: 0 auto;
+	padding-top: 10px;
+	display: block;
+}
+
+.topnav-white-bar {
+	height: 190px;
+	@include outer-container();
+	.french-col {
+		@include span-columns(1);
+		padding-top:50px;
+	}
+	.logo-col {
+		@include span-columns(3);
+		@include shift(4);
+		padding-top: 20px;
+		padding-left:10px;
+	}
+	.recruiter-signin-col {
+		@include span-columns(3);
+		@include shift(1);
+		@include omega();
+		padding-top:50px;
+		text-align: right;
+	}
+}
+
+.topnav-green-bar {
+	height: 40px;
+	width: 100%;
+	background: $color-primary-lightgreen;
+	nav {
+		@include outer-container();
+	}
+	.web-logo {
+		float:left;
+		display: inline-block;
+	}
+
+	a {
+		color: white;
+		padding: 11px;
+		display: inline-block;
+		text-decoration: none;
+		font-family: $font-stack-header-med;
+		font-size: 16px;
+		&:hover {
+			background-color: $color-secondary-yellowgreen;
+		}
+		&.active {
+			background-color: $color-secondary-yellowgreen;
+		}
+	}
+}
+.dropdown-browse-jobs  {
+	width: 100%;
+	background:$color-secondary-yellowgreen;
+	position: absolute;
+	z-index: 10;
+	.dropdown-container {
+		@include outer-container();
+		background:$color-background-grey;
+		margin-bottom: 5px;
+		& > div {
+			@include span-columns(3 of 12);
+			min-height: 250px;
+		.dropdown-menu-item {
+			padding: 10px 0 0 0;
+		}
+		a {
+			line-height: 1.3;
+		}
+		}
+		.dropdown-secondary-menu {
+			background:white;
+			a {
+				padding: 10px 25px 10px 10px;
+				display: block;
+				text-decoration: none;
+				border-left: 5px solid white;
+				position: relative;
+				&:hover {
+					/*font-weight:bold;*/
+					border-color: $color-primary-lightgreen;
+					background: $color-background-grey;
+				}
+				&:hover:after {
+					content: '\42';
+					font-family: "icomoon-ultimate";
+					@include vertical-align;
+					position: absolute;
+					right: 0;
+				}
+			}
+		}
+	}
 }
