@@ -1,6 +1,7 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "standard";
+@import "global/variables";
 
 /* strange that clearfix is not in standard css*/
 .cf:before,
