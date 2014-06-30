@@ -1,7 +1,5 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
-@import "standard";
-@import "global/variables";
 
 /* strange that clearfix is not in standard css*/
 .cf:before,
@@ -33,40 +31,78 @@ $grey-border: 1px solid #ccc;
   border: $grey-border;
 }
 
+html, body {
+	height: 100%;
+}
+
 body {
 	background: #ddd;
 	padding: 0;
 	margin: 0;
-  font-style: 14px;
+  	font-style: 14px;
+  	font-family: "museo-slab",serif;
 }
 
-.filters-container, .search-results, .worko-box {
-  background: white;
-}
+.sidebar {
+	position: fixed;
+	width: 280px;
+	top: 0;
+	left: 0;
+	background: #fff;
+	padding: 10px 30px;
+	height: 100%;
+	nav a {
+		display: block;
+		line-height: 2;
+		text-decoration: none;
+		color: #333;
+		position: relative;
+		transition: 1s all ease;
+		&:hover {
+			color: #aaa;
+			text-decoration: underline;
+		}
+	}
 
-.worko-header {
-	height: 60px;
-	width: 100%;
-	border-bottom: 3px solid #69BE28;
-	@extend %module-background;
-	h5 {
-		@include vertical-align;
-		text-align: center;
-		color: #bbb;
+	h1 {
+		font-family: "ff-enzo-web",sans-serif;
+		font-size: 2em;
+		font-weight: 100;
+
 	}
 }
 
-.worko-footer {
-  height: 200px;
-  width: 100%;
-  background: #427730;
-  margin-top: 20px;
+.main-container {
+	padding-left: 280px;
+	width: 100%;
+	h1 {
+		font-family: "ff-enzo-web",sans-serif;
+		font-size: 3em;
+		font-weight: 100;
+		margin-left:30px;
+
+	}
+	.index-container {
+		background: #ccc;
+		figure {
+			float: left;
+			background-color: #fff;
+			figcaption {
+				text-align:left;
+				padding:5px 10px;
+				width:400px;
+				height: 100px;
+				line-height: 1.3em;
+				div {
+					overflow:hidden;
+					height: 80px;
+				}
+
+			}
+		}
+	}
+
 }
 
 /* demo styles */
 
-.worko-box {
-  margin: 10px;
-  height: 300px;
-  @include span-columns(3);
-}

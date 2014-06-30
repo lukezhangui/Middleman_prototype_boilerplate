@@ -1,12 +1,12 @@
-<header>
-  <h5><%= lorem.sentence %></h5>
-</header>
+<div class="index-container cf">
+	<header>
+		<h1>Case Study</h1>
+	</header>
 
-<% 10.times do %>
-<div class="worko-box">
-  <h5 class="worko-heading"><%= lorem.job_title %></h5>
-  <p>
-    <%= lorem.b2c_paragraph %>
-  </p>
+	<% 10.times do %>
+	<figure>
+		<img src="http://placekitten.com/400/400">
+		<figcaption><div><%= lorem.words rand(1..200) %></div></figcaption>
+	</figure>
+	<% end %>
 </div>
-<% end %>
