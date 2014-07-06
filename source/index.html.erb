@@ -1,12 +1,40 @@
+---
+pageable: true
+per_page: 10
+---
 <div class="index-container cf">
-	<header>
-		<h1>Case Study</h1>
-	</header>
+  <header>
+    <h1>Case Study</h1>
+  </header>
 
-	<% 10.times do %>
-	<figure>
-		<img src="http://placekitten.com/400/400">
-		<figcaption><div><%= lorem.words rand(1..200) %></div></figcaption>
-	</figure>
-	<% end %>
+  <% if paginate && num_pages > 1 %>
+    <p>Page <%= page_number %> of <%= num_pages %></p>
+
+    <% if prev_page %>
+      <p><%= link_to 'Previous page', prev_page %></p>
+    <% end %>
+  <% end %>
+
+  <% page_articles.each_with_index do |article, i| %>
+      <figure>
+
+        <% link_to article do %>
+          <%= image_tag article.data.cover_photo %>
+          <figcaption>
+            <div>
+              <h5>article.title</h5>
+              <%= article.body %>
+            </div>
+          </figcaption>
+        <% end %>
+
+      </figure>
+  <% end %>
+
+  <% if paginate %>
+    <% if next_page %>
+      <p><%= link_to 'Next page', next_page %></p>
+    <% end %>
+  <% end %>
+
 </div>
