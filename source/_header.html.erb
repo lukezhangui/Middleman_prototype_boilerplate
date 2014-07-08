@@ -1,40 +1,56 @@
   <header class='worko-header'>
-  	<section class="topnav-white-bar">
-  		<img class="leaderboard-ad" src="../stylesheets/images/leaderboard.jpg">
-      <div class="french-col">
-        <a href="#">Français</a></div>
-      <div class="logo-col">
-        <img class="workopolis-logo" src="../stylesheets/images/workopolis-logo-notag.png">
-      </div>
-      <div class="recruiter-signin-col"><a href="#">Recruiters/Employers?</a></div>
-  	</section>
-  	<section class="topnav-green-bar">
-  		<nav>
-        <img class="web-logo" src="../stylesheets/images/web-logo.png">
-      	<a href="#">Home</a>
-  			<a href="#">Find Jobs</a>
-  			<a href="#">My Resume</a>
-  			<a href="#">My Dashboard</a>
-  			<a href="#">Advice and Tips</a>
-  		</nav>
-  	</section>
-    <div class="dropdown-browse-jobs">
-      <div class="dropdown-container">
+  	<section class="header-container">
+  		<img class="leaderboard-ad" src="./stylesheets/images/leaderboard.jpg">
+     
+        <div class="workopolis-logo"><img class="woropolis-large-logo" src="./stylesheets/images/workopolis-logo-notag.png"></div>
+          
+          <nav class="top-navigation">
+            <a>Find Jobs</a>
+            <a>My Resume</a>
+            <a>My Dashboard</a>
+            <a>Advice & Tips</a>
+            <a>Sign In/Join Now</a>  
+           </nav>
 
-        <div class="dropdown-secondary-menu"> 
-          <% 7.times do %>
-          <a href="#"><%= lorem.words 4 %></span></a>
-          <% end %>
+         <div class="employer-link">
+          <span class="icon-notebook"></span>
+          <a href="/">Employers</a>
+         </div>
+    </section>
+      <section class="topnav-green-bar">
+        <div class="global-search">
+          <img class="web-logo" src="./stylesheets/images/web-logo.png">
+           <form>
+            <p>
+             <input type="text" class="keyword search-field-trigger" placeholder="Job Title, Keywords" tabindex="1" />
+            </p> 
+            <p>
+             <input type="text"  class="location search-field-trigger" placeholder="Location" tabindex="2"/>
+            </p>
+        
+              <button class="submit-search btn4 search-field-trigger" tabindex="3"><span class="icon-search"></span>Search Jobs</button>
+
+           </form>  
         </div>
-        <% 3.times do%>
-          <div>
+      </section>
+      <div class="dropdown-browse-jobs">
+        <div class="dropdown-container">
+
+          <div class="dropdown-secondary-menu"> 
             <% 7.times do %>
-              <div class="dropdown-menu-item"><a href="#"><%= lorem.words 4 %></a></div>
+            <a href="#"><%= lorem.words 4 %></span></a>
             <% end %>
           </div>
-        <% end %>
+          <% 3.times do%>
+          <div>
+            <% 7.times do %>
+            <div class="dropdown-menu-item"><a href="#"><%= lorem.words 4 %></a></div>
+            <% end %>
+          </div>
+          <% end %>
+        </div>
+
+
       </div>
 
-    </div>
-   
-  </header>
+    </header>
