@@ -325,14 +325,18 @@ body {
 
 	.footer-nav-container {
 	@include span-columns(8);
-
+	}
 	.footer-link {
 	@include span-columns(4)
-
 	}
-  }
 }
-
+.copyright {
+	color:#fff;
+	padding-top:75px;
+	margin: 0 auto;
+	font-size: 10px;
+	width: 960px;
+	}
 
 
 .social-container {
